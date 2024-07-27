@@ -10,7 +10,7 @@ const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://20.244.56.144/test/${type}`); //after every request token expire so please resolve it.
+        const response = await fetch(`http://20.244.56.144/test/${type}`); 
         if (!response.ok) {
           throw new Error('Error in response');
         }
